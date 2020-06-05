@@ -1,0 +1,14 @@
+React
+• Biblioteca para construção de interfaces;
+• Utilizado para construção de Single-Page Applications;
+• Podemos chamar de framework? O Diego considera uma framework
+• Tudo fica dentro do Javascript ou Typescript;
+• React / ReactJS / React Native;
+
+Vantagens
+• Organização do código;
+    → Componentização;
+• Divisão de responsabilidades;
+    → Back-end: Regra de negócio
+    → Front-end: Interface
+• Uma APi, múltiplos clientes;

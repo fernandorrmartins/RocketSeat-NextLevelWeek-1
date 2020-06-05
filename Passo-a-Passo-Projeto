@@ -1,0 +1,13 @@
+Criação de uma API
+	♦ npm install express -D
+	♦ npm install @types/express -D
+	♦ npm install ts-node -D
+	♦ npm install typescript -D
+	♦ npx tsc --init
+	♦ npx ts-node src/server.ts
+	♦ npm install ts-node-dev -D
+	♦ npx ts-node-dev src/server.ts
+
+Criação de um projeto React
+	♦ npx create-react-app web --template=typescript
+	♦ Instalar expo no smarthphone (android/ios)
