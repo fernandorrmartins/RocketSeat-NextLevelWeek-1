@@ -1,0 +1,21 @@
+-- Tabelas
+-- Table name: points (Pontos de coleta)
+-- Table fields
+--  • image
+--  • name
+--  • email
+--  • whatsapp
+--  • latitude
+--  • longitude
+--  • city
+--  • uf
+
+-- Table name: items (Items para coleta)
+-- Table fields
+--  • image
+--  • title
+
+-- Muitos para muitos (N-N) (Pivot)
+-- Table name: point_items (Relacionamento dos itens que um ponto coleta)
+--  • point_id
+--  • item_id

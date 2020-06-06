@@ -1,6 +1,13 @@
 import express from 'express';
+import routes from './routes';
 
 const app = express();
+
+app.use(express.json());
+
+app.use(routes);
+
+app.listen(66);
 
 // Rota: Endereço completo da requisição
 // Recurso: Qual entidade estamos acessando do sistema
@@ -14,19 +21,9 @@ const app = express();
 // GET http://localhost:3333/users = Listar usuários
 // GET http://localhost:3333/users/5 = Buscar do usuário com Id 5
 
-app.get('/users', (request, response) => {
-    console.log('Listagem de usuários');
+// Request Param: Parâmetros que vem na própria rota que indentificam um recurso
+// Query Param: Parâmetros que vem na própria rota geralmente opcionais para filtros, paginação
+// Request Body: Parâmetros para criação/atualização de informações
 
-    return response.json(['Diego', 'Fernando']);
-});
-
-app.post('/users', (request, response) => {
-    const user = {
-        name: 'Fernando',
-        email: 'fernandorrmartins@gmail.com'
-    };
-
-    return response.json(user);
-})
-
-app.listen(66);
+// SELECT * FROM users WHERE name = 'Fernando'
+// knex('users').where('name', 'Fernando').select('*');
