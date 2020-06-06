@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "cls && ts-node-dev src/server.ts"
+    "dev": "cls && ts-node-dev src/server.ts",
+    "knex:migrate": "knex migrate:latest --knexfile knexfile.ts migrate:latest"
   },
   "keywords": [],
   "author": "Fernando Rodrigues Ribeiro Martins",

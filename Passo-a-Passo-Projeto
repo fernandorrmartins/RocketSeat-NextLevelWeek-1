@@ -9,6 +9,7 @@ Criação de uma API
 	♦ npx ts-node-dev src/server.ts
 	♦ npm install knex -D
 	♦ npm install sqlite3 -D
+	♦ npx knex migrate:latest --knexfile knexfile.ts migrate:latest
 
 Criação de um projeto React
 	♦ npx create-react-app web --template=typescript
