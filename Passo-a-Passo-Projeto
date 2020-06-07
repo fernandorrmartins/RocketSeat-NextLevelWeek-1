@@ -15,4 +15,6 @@ Criação de uma API
 
 Criação de um projeto React
 	♦ npx create-react-app web --template=typescript
+	♦ npm install react-icons
+	♦ npm install react-router-dom
 	♦ Instalar expo no smarthphone (android/ios)
