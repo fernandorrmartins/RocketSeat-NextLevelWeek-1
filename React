@@ -24,3 +24,10 @@ Criação de um componente:
             ◘ const NomeComponente: React.FC<NomeComponenteProps> = (props) => { return (<h1>{props.nomeParametro}</h1>); }
         → Exportação padrão do componente no final do arquivo
             export default NomeComponenteProps;
+
+Estado:
+    • import React, { useState } from 'react';
+    • const [getNomeParametro, setNomeParametro] = useState('valor inicial do estado'); // Vai retornar um array [valorInicial, função pra mudar valor]
+    • Exemplos:
+        ◘ <h1>{getNomeParametro}</h1>
+        ◘ <header title={`Titulo ${getNomeParametro}`} />
