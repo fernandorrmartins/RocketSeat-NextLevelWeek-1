@@ -12,3 +12,15 @@ Vantagens
     → Back-end: Regra de negócio
     → Front-end: Interface
 • Uma APi, múltiplos clientes;
+
+Criação de um componente:
+    • Importação do reac [Obrigatório]
+        → Import React from 'react'
+        → Criação de uma função constante para retornar o HTML
+            ◘ const NomeComponente = () => { return (<h1>Txto</h1>); }
+        → Se houver parâmetros no componente, criação de uma propriedade a partir de uma interface
+            ◘ interface NomeComponenteProps { nomeParametro? : tipo } // ?: Quando tem interrogação quer dizer que é opcional
+        → Aplicar props na função constante
+            ◘ const NomeComponente: React.FC<NomeComponenteProps> = (props) => { return (<h1>{props.nomeParametro}</h1>); }
+        → Exportação padrão do componente no final do arquivo
+            export default NomeComponenteProps;

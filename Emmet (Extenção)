@@ -1,0 +1,6 @@
+• Por padrão vem instalado no visual studio code
+• Para ativar para o react
+    → cntrl + shift + p: Preferences: Open Settings (JSON)
+    → Adicionar as seguintes linhas:
+        "emmet.syntaxProfiles": { "javascript": "jsx" },
+        "emmet.includeLanguages": { "javascript": "javascriptreact" },
